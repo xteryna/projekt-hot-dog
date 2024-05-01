@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+  }
+  
+html {
+font-family: sans-serif;
+font-size: 16px;
+}
+
+body {
+margin: 0;
+}
+
+.container {
+--primary-color: rgb(1, 6, 104);
+--secondary-color: rgb(229, 239, 246);
+
+}
+
+.topping {
+    margin: 0.5em auto;  
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    padding: 0.5em 1em;
+    width: 20rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 20px
+}
+
+.topping--selected {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
+
+h3,p {
+    margin: 0;
+}
